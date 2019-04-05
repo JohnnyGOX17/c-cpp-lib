@@ -1,16 +1,9 @@
-/**
- * File              : FtoC.c
- * Author            : John Gentile <johncgentile17@gmail.com>
- * Date              : 06.12.2017
- * Last Modified Date: 03.01.2018
- * Last Modified By  : John Gentile <johncgentile17@gmail.com>
- */
 #include <stdio.h>
 
 // this line and the two below are comments
 /* print Fahrenheit-Celsius table
  * for fahr = 0, 20, ..., 300 */
-main()
+int main()
 {
         /* variable declarations */
         float fahr, celsius;
