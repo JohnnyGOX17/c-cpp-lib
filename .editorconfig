@@ -1,0 +1,20 @@
+# EditorConfig for C Kernel Development
+# https://editorconfig.org/
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file, UTF-8 charset
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+# match C source and header files, set indent to 8-spaces and use tabs
+[*.{c,h}]
+indent_style = tab
+indent_size = 8
+
+# Ensure tabs are used in Makefiles
+[Makefile]
+indent_style = tab
