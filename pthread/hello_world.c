@@ -10,7 +10,7 @@ void *PrintHello(void *threadid)
         pthread_exit(NULL);
 }
 
-int main(int argc, char *argv[])
+int main(void)
 {
         pthread_t threads[NUM_THREADS];
         int rc;
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
                 rc = pthread_create(&threads[t], NULL, PrintHello, (void *)t);
                 if (rc) {
                         printf("ERRORl return code from pthread_create() is %d\n", rc);
-                        exit(-1);
+                        return 1;
                 }
         }
 
